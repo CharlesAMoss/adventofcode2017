@@ -1,19 +1,25 @@
 
 
-const fs = require('fs');
-const input = fs.readFileSync('input.txt', "utf8");
+// const fs = require('fs');
+// const input = fs.readFileSync('input.txt', "utf8");
 
-function process(str) {
-    const splits = str.split('');
-    const nums = [];
+module.exports = {
 
-    for (i=0; i < splits.length; i++){
-        if (splits[i] === splits[i+1]) {
-            nums.push(parseInt(splits[i]))
+    process: function(str) {
+        const nums = [0];
+        const splits = str.split('');
+        
+        for (i=0; i < splits.length; i++){
+            if (splits[i] === splits[i+1]) {
+                nums.push(parseInt(splits[i]))
+            }
         }
+        
+        if (splits[0] === splits[splits.length-1]){
+            nums.push(parseInt(splits[0]))
+        }
+        
+        return nums.reduce((a, b) => a + b)
     }
-    
-    console.log(nums);
-}
 
-process(input)
+};
