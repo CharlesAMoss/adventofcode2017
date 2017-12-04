@@ -1,0 +1,11 @@
+{
+  "name": "adventofcode2017",
+  "version": "1.0.0",
+  "description": "http://adventofcode.com/2017/about",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@charlesmoss",
+  "license": "ISC"
+}
