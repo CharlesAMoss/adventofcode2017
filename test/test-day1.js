@@ -5,91 +5,91 @@ const fs = require('fs');
 
 // part 1
 
-fs.readFile('./day1/input.txt', function (err, data) {
-    if (err)
-        throw err;
-    if (data)
-        console.log('part 1: ' + captcha.process(data.toString('utf8')));
-})
+// fs.readFile('./day1/input.txt', function (err, data) {
+//     if (err)
+//         throw err;
+//     if (data)
+//         console.log('part 1: ' + captcha.process(data.toString('utf8')));
+// })
 
-it('Only repeating numbers are summed', function() {
+// it('Only repeating numbers are summed', function() {
         
-        const testout = captcha.process('1122')
+//         const testout = captcha.process('1122')
 
-        expect(testout).to.equal(3);
+//         expect(testout).to.equal(3);
         
-});
+// });
 
-it('number matches the next', function() {
+// it('number matches the next', function() {
     
-    const testout = captcha.process('1111')
+//     const testout = captcha.process('1111')
 
-    expect(testout).to.equal(4);
+//     expect(testout).to.equal(4);
     
-});
+// });
 
-it('no repeating number matches', function() {
+// it('no repeating number matches', function() {
     
-    const testout = captcha.process('1234')
+//     const testout = captcha.process('1234')
 
-    expect(testout).to.equal(0);
+//     expect(testout).to.equal(0);
     
-});
+// });
 
-it('String is circular, check for that', function() {
+// it('String is circular, check for that', function() {
     
-    const testout = captcha.process('91212129')
+//     const testout = captcha.process('91212129')
 
-    expect(testout).to.equal(9);
+//     expect(testout).to.equal(9);
     
-});
+// });
 
-// part 2
+// // part 2
 
-fs.readFile('./day1/input.txt', function (err, data) {
-    if (err)
-        throw err;
-    if (data)
-        console.log('part 2: ' + captcha.moreProcess(data.toString('utf8')));
-})
+// fs.readFile('./day1/input.txt', function (err, data) {
+//     if (err)
+//         throw err;
+//     if (data)
+//         console.log('part 2: ' + captcha.moreProcess(data.toString('utf8')));
+// })
 
-it('List contains 4 items, and all four digits match the digit 2 items ahead', function() {
+// it('List contains 4 items, and all four digits match the digit 2 items ahead', function() {
     
-    const testout = captcha.moreProcess('1212')
+//     const testout = captcha.moreProcess('1212')
 
-    expect(testout).to.equal(6);
+//     expect(testout).to.equal(6);
     
-});
+// });
 
-it('Every comparison is between a 1 and a 2.', function() {
+// it('Every comparison is between a 1 and a 2.', function() {
     
-    const testout = captcha.moreProcess('1221')
+//     const testout = captcha.moreProcess('1221')
 
-    expect(testout).to.equal(0);
+//     expect(testout).to.equal(0);
     
-});
+// });
 
-it('Both 2s match each other, but no other digit has a match', function() {
+// it('Both 2s match each other, but no other digit has a match', function() {
     
-    const testout = captcha.moreProcess('123425')
+//     const testout = captcha.moreProcess('123425')
 
-    expect(testout).to.equal(4);
+//     expect(testout).to.equal(4);
     
-});
+// });
 
-it('Matching cases', function() {
+// it('Matching cases', function() {
     
-    const testout = captcha.moreProcess('123123')
+//     const testout = captcha.moreProcess('123123')
 
-    expect(testout).to.equal(12);
+//     expect(testout).to.equal(12);
     
-});
+// });
 
-it('More matching cases', function() {
+// it('More matching cases', function() {
     
-    const testout = captcha.moreProcess('12131415')
+//     const testout = captcha.moreProcess('12131415')
 
-    expect(testout).to.equal(4);
+//     expect(testout).to.equal(4);
     
-});
+// });
 

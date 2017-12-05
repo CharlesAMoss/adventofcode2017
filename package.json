@@ -4,7 +4,8 @@
   "description": "http://adventofcode.com/2017/about",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha",
+    "watch": "./node_modules/.bin/mocha --watch *.js"
   },
   "repository": {
     "type": "git",
