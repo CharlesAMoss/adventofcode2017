@@ -6,7 +6,7 @@ const fs = require('fs');
 // part 1
 
 //console.log(checksum.process(''))
-fs.readFile('./day2/input.txt', function (err, data) {
+fs.readFile('./day2/input-ori.txt', function (err, data) {
     if (err)
         throw err;
     if (data)
@@ -15,25 +15,25 @@ fs.readFile('./day2/input.txt', function (err, data) {
 
 it('Largest and smallest values are 9 and 1, and their difference is 8.', function() {
     
-    const testout = checksum.process('5195')
+    const testout = checksum.process('5195\t\n753\t\n2468')
 
-    expect(testout).to.equal(8);
+    expect(testout).to.equal(18);
     
 });
 
-it('Largest and smallest values are 7 and 3, and their difference is 4.', function() {
+// it('Largest and smallest values are 7 and 3, and their difference is 4.', function() {
     
-    const testout = checksum.process('753')
+//     const testout = checksum.process('753')
 
-    expect(testout).to.equal(4);
+//     expect(testout).to.equal(4);
     
-});
+// });
 
-it('Largest and smallest values are 8 and 2, and their difference is 6.', function() {
+// it('Largest and smallest values are 8 and 2, and their difference is 6.', function() {
     
-    const testout = checksum.process('2468')
+//     const testout = checksum.process('2468')
 
-    expect(testout).to.equal(6);
+//     expect(testout).to.equal(6);
     
-});
+// });
 
